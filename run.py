@@ -90,9 +90,6 @@ def update_surplus_worksheet(data):
     surplus_worksheet = SHEET.worksheet('surplus')
     surplus_worksheet.append_row(data)
     print("Surplus worksheet updated successfully.\n")
-    surplus = SHEET.worksheet("surplus").get_all_values()
-    surplus_row = stock[-1] 
-    print(surplus_row)
 
 
 
